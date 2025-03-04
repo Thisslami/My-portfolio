@@ -34,12 +34,19 @@ const Contact = () => {
     setSuccess(null);
 
     // Send the form data to the backend via a POST request
-    fetch(`http://localhost:5000/api/send-email`, {
+    // fetch(`http://localhost:5000/api/send-email`, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(formData), // Send the form data to your backend
+    // })
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/send-email`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData), // Send the form data to your backend
+      body: JSON.stringify(formData),
     })
       .then((response) => response.json()) // Parse the JSON response from your backend
       .then((data) => {
