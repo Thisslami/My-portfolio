@@ -1,8 +1,8 @@
-
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./project-card";
 import Homepic from "../assets/homeImg.png";
+import Homepic2 from "../assets/homeImg2.png";
 
 const Project = () => {
   return (
@@ -35,6 +35,15 @@ const Project = () => {
               description="A modern fullstack e-commerce platform built using React, Node.js, and MongoDB."
               image={Homepic}
               link="https://versegadget.onrender.com"
+            />
+          </Col>
+
+          <Col lg={4} md={6} xs={12} className="mb-4">
+            <ProjectCard
+              title="Professional massage therapist website"
+              description="A professional massage therapy website offering relaxation and wellness built using React, Node.js, and MongoDB, and modern user experience."
+              image={Homepic2} // Replace with an actual image URL if available
+              link="https://my-portfolio-xfch.onrender.com"
             />
           </Col>
         </Row>
