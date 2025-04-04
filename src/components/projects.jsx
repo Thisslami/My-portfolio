@@ -43,7 +43,7 @@ const Project = () => {
               title="Professional massage therapist website"
               description="A professional massage therapy website offering relaxation and wellness built using React, Node.js, and MongoDB, and modern user experience."
               image={Homepic2} // Replace with an actual image URL if available
-              link="https://my-portfolio-xfch.onrender.com"
+              link="https://euphoric-touch-with-tish.onrender.com"
             />
           </Col>
         </Row>

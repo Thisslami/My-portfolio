@@ -68,7 +68,7 @@ const AboutMe = ({ scrollToSection, projectsRef, contactRef }) => {
 
               {/* Download CV Button */}
               <Button
-                href="https://drive.google.com/file/d/1guGMjJ9KDiAhdQFcBGbMGMqj8HhaVA6h/view?usp=sharing"
+                href="https://drive.google.com/file/d/1iHczIq54ox4ymA7y5YeIRMMZFSy3w0hR/view?usp=drivesdk"
                 target="_blank"
                 variant="outline-light"
                 style={{
