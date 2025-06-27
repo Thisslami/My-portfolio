@@ -3,14 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./project-card";
 import Homepic from "../assets/homeImg.png";
 import Homepic2 from "../assets/homeImg2.png";
+import Homepic3 from "../assets/homeImg3.png";
 
 const Project = () => {
   return (
     // Full-width background
     <div
       style={{
-        backgroundColor: "#f5f5f5", // Background color for the full width
-        width: "100%", // Ensure it spans the full width
+        backgroundColor: "#f5f5f5",
+        width: "100%",
       }}
     >
       {/* Constrained content */}
@@ -24,14 +25,14 @@ const Project = () => {
             <ProjectCard
               title="School Management System"
               description="A modern School Management System built using React, Node.js, and MongoDB."
-              image="https://res.cloudinary.com/djbtdlzrj/image/upload/v1738102417/Screenshot_2025-01-28_231209_wmkvwt.png" // Replace with actual image URL
+              image="https://res.cloudinary.com/djbtdlzrj/image/upload/v1738102417/Screenshot_2025-01-28_231209_wmkvwt.png"
               link="https://chizzy-kids-school.onrender.com/"
             />
           </Col>
 
           <Col lg={4} md={6} xs={12} className="mb-4">
             <ProjectCard
-              title="Gadget E-commerce Website "
+              title="Gadget E-commerce Website"
               description="A modern fullstack e-commerce platform built using React, Node.js, and MongoDB."
               image={Homepic}
               link="https://versegadget.onrender.com"
@@ -40,10 +41,20 @@ const Project = () => {
 
           <Col lg={4} md={6} xs={12} className="mb-4">
             <ProjectCard
-              title="Professional massage therapist website"
-              description="A professional massage therapy website offering relaxation and wellness built using React, Node.js, and MongoDB, and modern user experience."
-              image={Homepic2} // Replace with an actual image URL if available
+              title="Professional Massage Therapist Website"
+              description="A professional massage therapy website offering relaxation and wellness services built with MERN stack."
+              image={Homepic2}
               link="https://euphoric-touch-with-tish.onrender.com"
+            />
+          </Col>
+
+          {/* New Afkit Project - Responsive like others */}
+          <Col lg={4} md={6} xs={12} className="mb-4">
+            <ProjectCard
+              title="Afkit Nigeria"
+              description="Premium gadget store offering 6-month warranty with payment on delivery. Built with MERN stack (MongoDB, Express, React, Node.js)."
+              image={Homepic3} // Use your Afkit image here
+              link="https://afkit.ng"
             />
           </Col>
         </Row>
